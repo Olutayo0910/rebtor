@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title & Description -->
+    <title>Rebtor Fleet Circle™ | Haulage, Truck Management & Procurement</title>
+    <meta name="description" content="Rebtor delivers top-tier haulage services, truck management, fleet investment opportunities, and procurement solutions across Nigeria. We move the earth, you grow the wealth.">
+    <meta name="keywords" content="Rebtor, haulage services, truck management, fleet circle, procurement, logistics Nigeria, trucking investment">
+    <meta name="author" content="Rebtor Logistics">
+    <meta http-equiv="Content-Language" content="en">
+  
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="Rebtor Fleet Circle™ - We Move the Earth, You Grow the Wealth">
+    <meta property="og:description" content="Join Nigeria’s most trusted haulage and truck management network.">
+    <meta property="og:image" content="https://www.rebtor.com/reb4-logo.png">
+    <meta property="og:url" content="https://www.rebtor.com">
+    <meta property="og:type" content="website">
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rebtor Fleet Circle™ - We Move the Earth, You Grow the Wealth">
+    <meta name="twitter:description" content="Haulage, truck management, fleet circle, and procurement services.">
+    <meta name="twitter:image" content="https://www.rebtor.com/reb4-logo.png">
+  
+    <!-- Favicon -->
+    <link rel="icon" href="rebtor_logo.png" type="image/png">
+  
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Rebtor Fleet Circle",
+      "url": "https://www.rebtor.com",
+      "logo": "https://www.rebtor.com/reb4-logo.png",
+      "sameAs": [
+        "https://www.facebook.com/YourPage",
+        "https://www.instagram.com/YourProfile",
+        "https://www.linkedin.com/company/YourPage"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+2348163225789",
+        "contactType": "Customer Service",
+        "areaServed": "NG"
+      }
+    }
+    </script>
+  
+    <!-- Fonts & Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  
+    <script>
+      window.addEventListener("DOMContentLoaded", () => lucide.createIcons());
+    </script>
+  
+    <style>
+      body { font-family: 'Merriweather', serif; }
+      h1, h2, h3, nav, button { font-family: 'Poppins', sans-serif; }
+      .clip-diagonal { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%); }
+    </style>
+  </head>
+  
+  <body class="font-[Inter] bg-gray-100 text-black">
+    <nav class="bg-green-900 text-white shadow sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="index.html">
+              <img class="h-12" src="reb4-logo.png" alt="Rebtor Logo">
+            </a>
+          </div>
+    
+          <!-- Center Contact Info (Hidden on small screens) -->
+          <div class="hidden md:flex flex-col text-center text-sm">
+            <span>📧 info@rebtor.com</span>
+            <span>📞 08163225789</span>
+          </div>
+    
+          <!-- Navigation Links -->
+          <div class="hidden md:flex gap-6 font-semibold items-center">
+            <a href="about.html" class="hover:text-green-300">About</a>
+    
+            <!-- Dropdown -->
+            <div class="relative group">
+              <button id="servicesToggle" class="flex items-center gap-1 hover:text-green-300">
+                Services
+                <svg id="dropdownArrow" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.084l3.71-3.854a.75.75 0 111.08 1.04l-4.24 4.4a.75.75 0 01-1.08 0l-4.24-4.4a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="servicesMenu" class="absolute left-0 mt-2 w-56 bg-white text-green-900 rounded shadow-lg py-2 hidden group-hover:block z-50">
+                <a href="haulage.html" class="block px-4 py-2 hover:bg-green-100">Haulage Services</a>
+                <a href="management.html" class="block px-4 py-2 hover:bg-green-100">Truck Management</a>
+                <a href="fleet-circle.html" class="block px-4 py-2 hover:bg-green-100">Rebtor Fleet Circle™</a>
+                <a href="procurement.html" class="block px-4 py-2 hover:bg-green-100">Procurement</a>
+                <a href="index.html#consultancy" class="block px-4 py-2 hover:bg-green-100">Consultancy</a>
+              </div>
+            </div>
+    
+            <a href="index.html#model" class="hover:text-green-300">How It Works</a>
+            <a href="index.html#contact" class="hover:text-green-300">Contact</a>
+          </div>
+    
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden flex items-center">
+            <button id="mobileMenuButton" class="text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+        <div class="text-sm text-center mb-4">
+          <p>📧 info@rebtor.com</p>
+          <p>📞 08163225789</p>
+        </div>
+        <a href="about.html" class="block py-2 hover:text-green-300">About</a>
+        <a href="haulage.html" class="block py-2 hover:text-green-300">Haulage Services</a>
+        <a href="management.html" class="block py-2 hover:text-green-300">Truck Management</a>
+        <a href="fleet-circle.html" class="block py-2 hover:text-green-300">Rebtor Fleet Circle™</a>
+        <a href="procurement.html" class="block py-2 hover:text-green-300">Procurement</a>
+        <a href="index.html#consultancy" class="block py-2 hover:text-green-300">Consultancy</a>
+        <a href="index.html#model" class="block py-2 hover:text-green-300">How It Works</a>
+        <a href="index.html#contact" class="block py-2 hover:text-green-300">Contact</a>
+      </div>
+    
+      <script>
+        // Toggle mobile menu
+        document.getElementById('mobileMenuButton').addEventListener('click', () => {
+          const menu = document.getElementById('mobileMenu');
+          menu.classList.toggle('hidden');
+        });
+      </script>
+    </nav>  
+    
+    
+    
+    <section class="min-h-[75vh] flex flex-col md:flex-row">
+        <!-- Left Side -->
+        <div class="md:w-1/2 flex flex-col justify-center px-6 py-16 bg-white">
+          <h1 class="text-4xl md:text-6xl font-semibold mb-4 p-8">We Move the Earth, You Grow the Wealth</h1>
+          <p class="max-w-4xl mx-auto text-base text-gray-700 leading-relaxed mb-8 p-8">
+            Rebtor is Nigeria’s innovation leader in smart trucking solutions and group-owned logistics. We connect truck owners, drivers, and cargo managers under one trusted framework.
+        </p>
+          <div class="flex space-x-4 p-8">
+            <a href="form.html" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition">HIRE TRUCK</a>
+            <a href="form.html" class="border border-green-700 text-green-700 px-6 py-2 rounded hover:bg-green-700 hover:text-white transition">REGISTER TRUCK</a>
+          </div>
+        </div>
+      
+        <!-- Right Side -->
+<!-- Right Side -->
+<div class="md:w-1/2 relative min-h-[75vh]">
+  <!-- Background Image -->
+  <img src="/worksite2.jpg" alt="Truck visual" class="absolute inset-0 w-full h-full object-cover z-0" />
+
+  <!-- Diagonal Slash Overlay -->
+  <div class="absolute inset-0 bg-green-700/40 z-10 clip-diagonal"></div>
+
+  <!-- Optional foreground content -->
+  <div class="relative z-20 flex items-center justify-center h-full">
+    <!-- Content here if needed -->
+  </div>
+</div>
+
+
+      </section>
+      <!-- Divider Line -->
+<hr class="border-t-2 border-green-700 " />
+
+<!-- Achievements Section -->
+<section class="bg-white py-4">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+    
+    <!-- Active Customers -->
+    <div class="flex flex-col items-center">
+      <i data-lucide="users" class="w-10 h-10 text-green-600 mb-4"></i>
+      <h3 class="text-2xl font-bold text-gray-800">50+</h3>
+      <p class="text-gray-600">Active Customers</p>
+    </div>
+
+    <!-- Decade of Experience -->
+    <div class="flex flex-col items-center">
+      <i data-lucide="calendar" class="w-10 h-10 text-orange-500 mb-4"></i>
+      <h3 class="text-2xl font-bold text-gray-800">10 Years</h3>
+      <p class="text-gray-600">Industry Experience</p>
+    </div>
+
+    <!-- Excellent ROI -->
+    <div class="flex flex-col items-center">
+      <i data-lucide="trending-up" class="w-10 h-10 text-green-600 mb-4"></i>
+      <h3 class="text-2xl font-bold text-gray-800">Excellent</h3>
+      <p class="text-gray-600">Average ROI</p>
+    </div>
+
+    <!-- Technical Know-How -->
+    <div class="flex flex-col items-center">
+      <i data-lucide="settings" class="w-10 h-10 text-orange-500 mb-4"></i>
+      <h3 class="text-2xl font-bold text-gray-800">Expert</h3>
+      <p class="text-gray-600">Technical Know-How</p>
+    </div>  
+  </div>
+</section>
+
+<section id="investor-letter" class="bg-yellow-50 py-16 px-6 md:px-24 text-gray-800" style="font-family: 'Dancing Script', cursive;">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-8 border-b-4 border-orange-400 inline-block pb-2">✉️ A Letter to Our Future Investors</h2>
+    
+    <div class="bg-white shadow-xl rounded-2xl p-8 border-l-4 border-green-700 leading-relaxed text-2xl">
+      <!-- Body content remains unchanged -->
+      <p class="mb-4">Dear Future Investor,</p>
+      
+      <p class="mb-4">Let’s be honest — most people want to <strong>build wealth</strong>, but very few ever get to <em>own the engine that moves it</em>.</p>
+
+      <p class="mb-4">At <strong>Rebtor</strong>, we’re changing that story.</p>
+
+      <p class="mb-4">
+        Welcome to the <strong>Rebtor Fleet Circle™</strong>, a well-structured opportunity designed for people who are ready to move beyond wishful thinking and into strategic action.
+        This program is for those who want to put their money into <strong>real assets</strong>, <strong>real operations</strong>, and <strong>real returns</strong> — <em>not another get-rich-quick scheme</em>. We don’t do hype. We do haulage.
+      </p>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2 text-green-700">🚛 The Big Idea</h3>
+      <p class="mb-4">
+        Our plan is beautifully simple. We bring <strong>like-minded investors together</strong> into structured <strong>clusters</strong>, and each cluster <strong>co-owns a dump truck</strong>,
+        operated by our seasoned trucking experts. The truck is <em>registered in the cluster’s name</em>, and every member of that circle enjoys <strong>daily returns</strong> — transparently and reliably.
+      </p>
+
+      <blockquote class="border-l-4 border-orange-400 pl-4 italic text-gray-600 mb-4">
+        “The rich don’t work for money. They make money work for them.” — Robert Kiyosaki
+      </blockquote>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2 text-green-700">🛣️ Why This Is Different</h3>
+      <p class="mb-4">
+        Truck ownership traditionally requires huge capital, trusted mechanics, operations management, financial tracking — the list goes on. That’s where we come in.
+        We do the heavy lifting: <strong>procurement, registration, driver recruitment, maintenance, reporting</strong>, and <strong>daily disbursements</strong>. 
+        You do the smart thing: invest and watch your capital go to work.
+      </p>
+
+      <p class="mb-4">
+        This is not an overnight success scheme — it’s a practical way to build long-term wealth in a thriving industry with consistent demand.
+      </p>
+
+      <blockquote class="border-l-4 border-orange-400 pl-4 italic text-gray-600 mb-4">
+        “If you don't find a way to make money while you sleep, you will work until you die.” — Warren Buffett
+      </blockquote>
+
+      <h3 class="text-2xl font-semibold mt-6 mb-2 text-green-700">👷🏽‍♂️ What We Ask From You</h3>
+      <p class="mb-4">
+        Come in ready to grow. Come in with patience. Come in with the mindset of a co-owner, not a gambler. This isn’t a bet — it’s a business. 
+        You’ll be in good company with others who want returns that are fair, consistent, and rooted in work that moves Nigeria forward.
+      </p>
+
+      <p class="mb-8">
+        It’s time to make your money move — not in some abstract app, but <strong>on real roads with real results</strong>.
+      </p>
+
+      <p class="font-semibold text-green-800">Warm regards,</p>
+      <p class="mb-6 italic text-green-800">Olutayo Ogunlade<br>Founder & Vision Lead, Rebtor Group</p>
+
+      <div class="flex justify-center"> 
+        <a href="https://wa.me/2348163225789" target="_blank" class="bg-green-700 text-white px-8 py-3 rounded-full hover:bg-green-800 transition shadow-md">
+          Join a Circle Today
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="services" class="py-20 bg-yellow-50">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-12">
+      What we do
+    </h2>
+
+    <div class="grid gap-2 md:grid-cols-2">
+      <!-- Haulage Card -->
+      <div class="bg-white shadow-md p-8 hover:shadow-lg transition text-center">
+        <div class="flex justify-center mb-4">
+          <div data-lucide="truck" class="w-10 h-10 text-green-600"></div>
+        </div>
+        <h3 class="text-2xl font-semibold mb-2">Haulage</h3>
+        <p class="text-gray-700 leading-relaxed">
+          Efficient haulage of materials with real-time monitoring and timely delivery to construction sites.
+        </p>
+      </div>
+
+      <!-- Management Card -->
+      <div class="bg-white l shadow-md p-8 hover:shadow-lg transition text-center">
+        <div class="flex justify-center mb-4">
+          <div data-lucide="settings" class="w-10 h-10 text-orange-500"></div>
+        </div>
+        <h3 class="text-2xl font-semibold mb-2">Management</h3>
+        <p class="text-gray-700 leading-relaxed">
+          We manage trucks end-to-end for owners, ensuring transparency, profit, and stress-free operations.
+        </p>
+      </div>
+
+      <!-- Investment Card -->
+      <div class="bg-white l shadow-md p-8 hover:shadow-lg transition text-center">
+        <div class="flex justify-center mb-4">
+          <div data-lucide="dollar-sign" class="w-10 h-10 text-green-600"></div>
+        </div>
+        <h3 class="text-2xl font-semibold mb-2">Investment</h3>
+        <p class="text-gray-700 leading-relaxed">
+          Enabling individuals to co-own trucks while we handle operations, profits, and reporting.
+        </p>
+      </div>
+
+      <!-- Solutions Card -->
+      <div class="bg-white l shadow-md p-8 hover:shadow-lg transition text-center">
+        <div class="flex justify-center mb-4">
+          <div data-lucide="package-check" class="w-10 h-10 text-orange-500"></div>
+        </div>
+        <h3 class="text-2xl font-semibold mb-2">Solutions</h3>
+        <p class="text-gray-700 leading-relaxed">
+          Tailored logistics services for contractors and clients with flexible and dependable support.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  lucide.createIcons();
+</script>
+
+<!-- Customer & Investor Benefits with Left Justification and Icons -->
+<section class="bg-white py-16 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-green-800 text-center mb-12">Why Choose Rebtor?</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border border-green-100 rounded-xl shadow-lg overflow-hidden">
+
+      <!-- Customers Column -->
+      <div class="p-6 md:border-r md:border-green-200 text-left">
+        <h3 class="text-2xl font-semibold text-green-700 mb-6">For Customers</h3>
+        <ul class="space-y-5 text-gray-700">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            On-time supply to job sites
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Track materials & progress in real-time
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Professionally managed fleets
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Reliable service from committed providers
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path d="M3 10h4l3 10h11" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Dedicated service lines & dispatch
+          </li>
+        </ul>
+      </div>
+
+      <!-- Investors Column -->
+      <div class="p-6 text-left">
+        <h3 class="text-2xl font-semibold text-green-700 mb-6">For Investors</h3>
+        <ul class="space-y-5 text-gray-700">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Trusted revenue flow from active demand
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Access reports, ROI, and performance metrics
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Reduced risks with experienced team
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Co-ownership with monthly returns
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24"><path d="M3 10h4l3 10h11" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Regular updates and account support
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- How It Works -->
+<section id="model" class="bg-white px-4">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-green-800 mb-10">How It Works</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white rounded-lg shadow">
+        <i data-lucide="user-plus" class="w-10 h-10 mx-auto text-green-600 mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">1. Join the Fleet Circle</h3>
+        <p class="text-gray-600">Register your truck or invest into our cooperative fleet model.</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow">
+        <i data-lucide="map-pin" class="w-10 h-10 mx-auto text-green-600 mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">2. We Assign and Manage</h3>
+        <p class="text-gray-600">Rebtor assigns jobs, maintains your vehicle, and coordinates logistics.</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow">
+        <i data-lucide="wallet" class="w-10 h-10 mx-auto text-green-600 mb-4"></i>
+        <h3 class="font-semibold text-lg mb-2">3. You Earn Steady Returns</h3>
+        <p class="text-gray-600">Enjoy passive income with full operational transparency.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Fleet Gallery -->
+<section id="gallery" class="bg-white py-16 px-4">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-green-800 mb-10">Fleet in Action</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <img src="/gallery1.jpg" class="rounded-lg shadow-md object-cover h-64 w-full" alt="Fleet Image 1">
+      <img src="/lowbed1.jpeg" class="rounded-lg shadow-md object-cover h-64 w-full" alt="Fleet Image 2">
+      <img src="/truck1.png" class="rounded-lg shadow-md object-cover h-64 w-full" alt="Fleet Image 3">
+    </div>
+  </div>
+</section>
+<!-- Testimonial Slider Section -->
+<section class="py-16 bg-gray-50" id="testimonials">
+  <div class="max-w-3xl mx-auto px-6 text-center" x-data="{ active: 0, testimonials: [
+    { quote: 'Rebtor manages my truck like it’s their own. I receive consistent updates and earnings without stress.', name: '— Ayo I., Truck Owner' },
+    { quote: 'I joined the Fleet Circle and it’s the best investment move I’ve made in years!', name: '— Mariam O., Investor' },
+    { quote: 'Their procurement team helped me get a quality truck at a great price. Excellent support!', name: '— Emeka N., New Truck Owner' }
+  ] }" x-init="setInterval(() => active = (active + 1) % testimonials.length, 5000)">
+    <h2 class="text-3xl font-bold text-green-900 mb-10">What Our Clients Say</h2>
+    
+    <template x-for="(testimonial, index) in testimonials" :key="index">
+      <div x-show="active === index" x-transition class="bg-white p-8 shadow rounded-lg">
+        <p class="italic text-gray-700 text-lg" x-text="testimonial.quote"></p>
+        <div class="mt-4 font-semibold text-green-800" x-text="testimonial.name"></div>
+      </div>
+    </template>
+
+    <div class="flex justify-center space-x-3 mt-6">
+      <template x-for="(testimonial, index) in testimonials" :key="'dot' + index">
+        <button @click="active = index" class="w-3 h-3 rounded-full" :class="{'bg-green-600': active === index, 'bg-green-300': active !== index}"></button>
+      </template>
+    </div>
+  </div>
+</section>
+
+<!-- Trusted By Section -->
+<section class="py-16 bg-gray-50" id="trusted">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-8">Trusted by over 20 customers and businesses</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center">
+      <img src="abdul_val logo.png" alt="Partner 1" class="h-12 mx-auto opacity-80 hover:opacity-100 transition">
+      <img src="tabs_logo1.png" alt="Partner 2" class="h-12 mx-auto opacity-80 hover:opacity-100 transition">
+      <img src="agvision_logo.jpg" alt="Partner 3" class="h-12 mx-auto opacity-80 hover:opacity-100 transition">
+      <img src="Matrix_logo.webp" alt="Partner 4" class="h-12 mx-auto opacity-80 hover:opacity-100 transition">
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Form -->
+<section id="contact" class="bg-gray-100 py-16 px-4">
+  <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-10">
+    <h2 class="text-3xl font-semibold text-center text-green-800 mb-2">Contact Us</h2>
+
+    <!-- Contact Info -->
+    <div class="text-center text-sm text-gray-700 mb-6">
+      <p>📧 <a href="mailto:info@rebtor.com" class="text-green-700 hover:underline">info@rebtor.com</a></p>
+      <p>📞 <a href="tel:08163225789" class="text-green-700 hover:underline">08163225789</a></p>
+    </div>
+
+    <!-- Form -->
+    <form class="space-y-6" action="https://formspree.io/f/mnnzzqzw" method="POST">
+      <div class="grid md:grid-cols-2 gap-4">
+        <input type="text" name="name" placeholder="Your Name" class="border border-gray-300 rounded px-4 py-2 w-full" required />
+        <input type="email" name="email" placeholder="Your Email" class="border border-gray-300 rounded px-4 py-2 w-full" required />
+      </div>
+      <textarea name="message" placeholder="Your Message" rows="5" class="border border-gray-300 rounded px-4 py-2 w-full" required></textarea>
+      <div class="text-center">
+        <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-green-900 text-white py-10 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+    <div>
+      <h3 class="font-bold text-lg mb-2">Rebtor Fleet Circle™</h3>
+      <p class="text-sm">Moving the earth so our partners grow wealth. Logistics, trucking, partnerships made easy.</p>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Quick Links</h4>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#services" class="hover:text-green-300">Services</a></li>
+        <li><a href="#model" class="hover:text-green-300">How It Works</a></li>
+        <li><a href="#contact" class="hover:text-green-300">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Get In Touch</h4>
+      <p class="text-sm">📍 Lagos, Nigeria</p>
+      <p class="text-sm">📞 +234-8163225789</p>
+      <p class="text-sm">✉️ info@rebtor.com</p>
+    </div>
+  </div>
+  <div class="text-center mt-8 text-sm text-green-300">© 2025 Rebtor. All rights reserved.</div>
+</footer>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/2348163225789" target="_blank" id="whatsapp-button">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+</a>
+
+<style>
+  #whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.2s;
+  }
+
+  #whatsapp-button:hover {
+    transform: scale(1.1);
+  }
+
+  #whatsapp-button img {
+    width: 50px;
+    height: 50px;
+  }
+</style>
+
+
+<!-- Add this script at the end of your HTML (before </body>) -->
+<script>
+  const toggleBtn = document.getElementById("servicesToggle");
+  const menu = document.getElementById("servicesMenu");
+  const arrow = document.getElementById("dropdownArrow");
+
+  toggleBtn.addEventListener("click", (e) => {
+    e.stopPropagation(); // Prevent click from closing immediately
+    menu.classList.toggle("hidden");
+    arrow.classList.toggle("rotate-180");
+  });
+
+  // Close dropdown if clicking outside
+  document.addEventListener("click", (e) => {
+    if (!toggleBtn.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.add("hidden");
+      arrow.classList.remove("rotate-180");
+    }
+  });
+</script>  
+
+  </body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <!-- Page Title -->
+    <title>Rebtor | Professional Truck Management Services in Nigeria</title>
+  
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Rebtor offers expert truck management services in Nigeria — ensuring maximum profit, reduced downtime, and hassle-free operations for truck owners and investors.">
+    <meta name="keywords" content="truck management Nigeria, truck owners, fleet management, Rebtor truck services, truck investment Nigeria, truck maintenance, truck leasing">
+    <meta name="author" content="Rebtor Limited">
+  
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="Rebtor | Professional Truck Management Services in Nigeria">
+    <meta property="og:description" content="Maximize your truck's earning potential with Rebtor's trusted management services. Hassle-free operations for owners and investors.">
+    <meta property="og:image" content="https://www.rebtor.com/rebtor_logo.png">
+    <meta property="og:url" content="https://www.rebtor.com/management.html">
+    <meta property="og:type" content="website">
+  
+    <!-- Favicon -->
+    <link rel="icon" href="rebtor_logo.png" type="image/png">
+  
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => lucide.createIcons());
+    </script>
+  
+    <!-- Alpine.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  
+    <!-- Font Styling -->
+    <style>
+      body {
+        font-family: 'Merriweather', serif;
+      }
+      h1, h2, h3, nav, button {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+  
+    <!-- Optional Decorative Shape -->
+    <style>
+      .clip-diagonal {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+      }
+    </style>
+  </head>
+  
+      
+<body class="font-sans text-black">
+
+  <!-- Navbar -->
+  <nav class="bg-green-900 text-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="index.html">
+            <img class="h-12" src="reb4-logo.png" alt="Rebtor Logo">
+          </a>
+        </div>
+  
+        <!-- Center Contact Info (Hidden on small screens) -->
+        <div class="hidden md:flex flex-col text-center text-sm">
+          <span>📧 info@rebtor.com</span>
+          <span>📞 08163225789</span>
+        </div>
+  
+        <!-- Navigation Links -->
+        <div class="hidden md:flex gap-6 font-semibold items-center">
+          <a href="about.html" class="hover:text-green-300">About</a>
+  
+          <!-- Dropdown -->
+          <div class="relative group">
+            <button id="servicesToggle" class="flex items-center gap-1 hover:text-green-300">
+              Services
+              <svg id="dropdownArrow" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.084l3.71-3.854a.75.75 0 111.08 1.04l-4.24 4.4a.75.75 0 01-1.08 0l-4.24-4.4a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div id="servicesMenu" class="absolute left-0 mt-2 w-56 bg-white text-green-900 rounded shadow-lg py-2 hidden group-hover:block z-50">
+              <a href="haulage.html" class="block px-4 py-2 hover:bg-green-100">Haulage Services</a>
+              <a href="management.html" class="block px-4 py-2 hover:bg-green-100">Truck Management</a>
+              <a href="fleet-circle.html" class="block px-4 py-2 hover:bg-green-100">Rebtor Fleet Circle™</a>
+              <a href="procurement.html" class="block px-4 py-2 hover:bg-green-100">Procurement</a>
+              <a href="index.html#consultancy" class="block px-4 py-2 hover:bg-green-100">Consultancy</a>
+            </div>
+          </div>
+  
+          <a href="index.html#model" class="hover:text-green-300">How It Works</a>
+          <a href="index.html#contact" class="hover:text-green-300">Contact</a>
+        </div>
+  
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobileMenuButton" class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+      <div class="text-sm text-center mb-4">
+        <p>📧 info@rebtor.com</p>
+        <p>📞 08163225789</p>
+      </div>
+      <a href="about.html" class="block py-2 hover:text-green-300">About</a>
+      <a href="haulage.html" class="block py-2 hover:text-green-300">Haulage Services</a>
+      <a href="management.html" class="block py-2 hover:text-green-300">Truck Management</a>
+      <a href="fleet-circle.html" class="block py-2 hover:text-green-300">Rebtor Fleet Circle™</a>
+      <a href="procurement.html" class="block py-2 hover:text-green-300">Procurement</a>
+      <a href="index.html#consultancy" class="block py-2 hover:text-green-300">Consultancy</a>
+      <a href="index.html#model" class="block py-2 hover:text-green-300">How It Works</a>
+      <a href="index.html#contact" class="block py-2 hover:text-green-300">Contact</a>
+    </div>
+  
+    <script>
+      // Toggle mobile menu
+      document.getElementById('mobileMenuButton').addEventListener('click', () => {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </nav>  
+
+
+
+  <section id="truck-management" class="py-20 px-6 md:px-20 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <!-- Title -->
+      <div class="mb-12">
+        <h2 class="text-6xl font-bold mb-4">Truck Management</h2>
+        <p class="text-lg text-gray-700 max-w-3xl font-semibold">Your truck. Our expertise. Shared success.</p>
+      </div>
+  
+      <!-- Two-column layout -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <!-- Text Content -->
+        <div class="space-y-6 text-lg leading-relaxed">
+          <p>Rebtor offers a trusted truck management service designed for busy owners, investors, and partners who want steady returns without daily involvement. Whether you own a single dump truck or a growing fleet, we take full operational responsibility—assigning your truck to jobs, managing drivers, handling maintenance schedules, fueling, documentation, and supervising daily activity.</p>
+  
+          <p>Every asset under our care is monitored through our field teams and digital tracking systems to ensure maximum uptime, safety, and productivity. We provide regular performance reports and transparent earnings updates, allowing you to track the growth of your asset while we handle the complexities.</p>
+  
+          <p class="font-semibold text-green-800">Our approach ensures your truck works for you—efficiently, profitably, and sustainably.</p>
+  
+          <!-- CTA -->
+          <div class="mt-6">
+            <a href="form.html" class="inline-block bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition">Get Started</a>
+          </div>
+        </div>
+  
+        <!-- Image or Visual -->
+        <div class="relative">
+          <div class="rounded-xl overflow-hidden shadow-lg">
+            <img src="/truck-management.jpg" alt="Truck monitoring" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Why Our Management Is Special -->
+<section class="py-16 px-6 md:px-20 bg-gray-50">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Why Our Truck Management Stands Apart</h2>
+    </div>
+  
+    <div class="max-w-4xl mx-auto space-y-6 text-lg">
+      <div class="flex items-start gap-4">
+        <i data-lucide="shield-check" class="w-6 h-6 text-green-700 mt-1"></i>
+        <p><strong>Full Ownership Support:</strong> From fueling to documentation, we manage all aspects of your truck’s operation—so you don’t have to.</p>
+      </div>
+  
+      <div class="flex items-start gap-4">
+        <i data-lucide="activity" class="w-6 h-6 text-green-700 mt-1"></i>
+        <p><strong>Performance Monitoring:</strong> Stay updated with detailed reports and analytics—see how your truck earns every day.</p>
+      </div>
+  
+      <div class="flex items-start gap-4">
+        <i data-lucide="users" class="w-6 h-6 text-green-700 mt-1"></i>
+        <p><strong>Driver Management:</strong> We recruit, vet, and supervise drivers to ensure professionalism and accountability.</p>
+      </div>
+  
+      <div class="flex items-start gap-4">
+        <i data-lucide="settings" class="w-6 h-6 text-green-700 mt-1"></i>
+        <p><strong>Proactive Maintenance:</strong> We keep your truck in top shape with preventive checks and expert repairs.</p>
+      </div>
+  
+      <div class="flex items-start gap-4">
+        <i data-lucide="clock" class="w-6 h-6 text-green-700 mt-1"></i>
+        <p><strong>Zero Downtime Mindset:</strong> Every minute counts—we work round the clock to maximize asset productivity.</p>
+      </div>
+  
+      <div class="flex items-start gap-4">
+        <i data-lucide="scale" class="w-6 h-6 text-green-700 mt-1"></i>
+        <p><strong>Transparent Earnings:</strong> No guessing, no delay—your profits are tracked and paid without stress.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Truck Gallery Section -->
+<section class="py-16 px-6 md:px-20 bg-white">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Our Trucks In Action</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">From construction sites to cross-country deliveries—Rebtor trucks get the job done.</p>
+    </div>
+  
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <img src="/gallery1.jpg" alt="Truck 1" class="rounded-lg shadow-md object-cover h-64 w-full">
+      <img src="/truck1.png" alt="Truck 2" class="rounded-lg shadow-md object-cover h-64 w-full">
+      <img src="/lowbed1.jpeg" alt="Truck 3" class="rounded-lg shadow-md object-cover h-64 w-full">
+    </div>
+  </section>
+  
+  
+
+  <!-- CTA Section -->
+  <!-- Truck Management CTA -->
+<section class="py-16 px-6 md:px-20 bg-green-900 text-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Let’s Manage Your Truck, The Rebtor Way</h2>
+      <p class="text-lg mb-6">Whether you’re a hands-off investor or a busy truck owner, Rebtor takes the burden off your shoulders—so you can earn while we drive the work.</p>
+      <a href="form.html" class="inline-block bg-green-700 hover:bg-green-800 text-white text-lg font-semibold px-8 py-3 rounded-xl transition-all duration-300 shadow-lg">Get Your Truck Managed</a>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+<footer class="bg-green-900 text-white py-10 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <h3 class="font-bold text-lg mb-2">Rebtor Fleet Circle™</h3>
+        <p class="text-sm">Moving the earth so our partners grow wealth. Logistics, trucking, partnerships made easy.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Quick Links</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#services" class="hover:text-green-300">Services</a></li>
+          <li><a href="#model" class="hover:text-green-300">How It Works</a></li>
+          <li><a href="#contact" class="hover:text-green-300">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Get In Touch</h4>
+        <p class="text-sm">📍 Lagos, Nigeria</p>
+        <p class="text-sm">📞 +234-8163225789</p>
+        <p class="text-sm">✉️ contact@rebtor.com</p>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-sm text-green-300">© 2025 Rebtor. All rights reserved.</div>
+  </footer>
+  
+  
+  <!-- Add this script at the end of your HTML (before </body>) -->
+<script>
+    const toggleBtn = document.getElementById("servicesToggle");
+    const menu = document.getElementById("servicesMenu");
+    const arrow = document.getElementById("dropdownArrow");
+  
+    toggleBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      arrow.classList.toggle("rotate-180");
+    });
+  
+    // Optional: Close dropdown when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!toggleBtn.contains(e.target) && !menu.contains(e.target)) {
+        menu.classList.add("hidden");
+        arrow.classList.remove("rotate-180");
+      }
+    });
+  </script>
+  
+</body>
+</html>

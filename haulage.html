@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <!-- Page Title -->
+    <title>Rebtor | Professional Haulage Services in Nigeria</title>
+  
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Rebtor offers reliable haulage services in Nigeria — safe transportation of goods, bulk deliveries, and logistics solutions for businesses and individuals.">
+    <meta name="keywords" content="haulage services Nigeria, truck haulage, goods transportation, Rebtor logistics, freight services, bulk delivery, transport company Nigeria">
+    <meta name="author" content="Rebtor Limited">
+  
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="Rebtor | Professional Haulage Services in Nigeria">
+    <meta property="og:description" content="Safe, reliable, and professional haulage services across Nigeria. Rebtor moves your goods with speed and care.">
+    <meta property="og:image" content="https://www.rebtor.com/rebtor_logo.png">
+    <meta property="og:url" content="https://www.rebtor.com/haulage.html">
+    <meta property="og:type" content="website">
+  
+    <!-- Favicon -->
+    <link rel="icon" href="rebtor_logo.png" type="image/png">
+  
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => lucide.createIcons());
+    </script>
+  
+    <!-- Alpine.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  
+    <!-- Font Styling -->
+    <style>
+      body {
+        font-family: 'Merriweather', serif;
+      }
+      h1, h2, h3, nav, button {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+  
+    <!-- Optional Decorative Shape -->
+    <style>
+      .clip-diagonal {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+      }
+    </style>
+  </head>
+  
+      
+<body class="font-[Inter] font-sans text-black">
+
+  <!-- Navbar -->
+  <nav class="bg-green-900 text-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="index.html">
+            <img class="h-12" src="reb4-logo.png" alt="Rebtor Logo">
+          </a>
+        </div>
+  
+        <!-- Center Contact Info (Hidden on small screens) -->
+        <div class="hidden md:flex flex-col text-center text-sm">
+          <span>📧 info@rebtor.com</span>
+          <span>📞 08163225789</span>
+        </div>
+  
+        <!-- Navigation Links -->
+        <div class="hidden md:flex gap-6 font-semibold items-center">
+          <a href="about.html" class="hover:text-green-300">About</a>
+  
+          <!-- Dropdown -->
+          <div class="relative group">
+            <button id="servicesToggle" class="flex items-center gap-1 hover:text-green-300">
+              Services
+              <svg id="dropdownArrow" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.084l3.71-3.854a.75.75 0 111.08 1.04l-4.24 4.4a.75.75 0 01-1.08 0l-4.24-4.4a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div id="servicesMenu" class="absolute left-0 mt-2 w-56 bg-white text-green-900 rounded shadow-lg py-2 hidden group-hover:block z-50">
+              <a href="haulage.html" class="block px-4 py-2 hover:bg-green-100">Haulage Services</a>
+              <a href="management.html" class="block px-4 py-2 hover:bg-green-100">Truck Management</a>
+              <a href="fleet-circle.html" class="block px-4 py-2 hover:bg-green-100">Rebtor Fleet Circle™</a>
+              <a href="procurement.html" class="block px-4 py-2 hover:bg-green-100">Procurement</a>
+              <a href="index.html#consultancy" class="block px-4 py-2 hover:bg-green-100">Consultancy</a>
+            </div>
+          </div>
+  
+          <a href="index.html#model" class="hover:text-green-300">How It Works</a>
+          <a href="index.html#contact" class="hover:text-green-300">Contact</a>
+        </div>
+  
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobileMenuButton" class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+      <div class="text-sm text-center mb-4">
+        <p>📧 info@rebtor.com</p>
+        <p>📞 08163225789</p>
+      </div>
+      <a href="about.html" class="block py-2 hover:text-green-300">About</a>
+      <a href="haulage.html" class="block py-2 hover:text-green-300">Haulage Services</a>
+      <a href="management.html" class="block py-2 hover:text-green-300">Truck Management</a>
+      <a href="fleet-circle.html" class="block py-2 hover:text-green-300">Rebtor Fleet Circle™</a>
+      <a href="procurement.html" class="block py-2 hover:text-green-300">Procurement</a>
+      <a href="index.html#consultancy" class="block py-2 hover:text-green-300">Consultancy</a>
+      <a href="index.html#model" class="block py-2 hover:text-green-300">How It Works</a>
+      <a href="index.html#contact" class="block py-2 hover:text-green-300">Contact</a>
+    </div>
+  
+    <script>
+      // Toggle mobile menu
+      document.getElementById('mobileMenuButton').addEventListener('click', () => {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </nav>  
+
+  <!-- Hero Section with Split Layout -->
+  <section class="bg-green-50 py-20 px-6 md:px-20">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      
+      <!-- Text Content -->
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Expert Haulage for Every Industry</h1>
+        <p class="text-lg  mb-6">At Rebtor, we specialize in dependable haulage for construction, agriculture, manufacturing, and beyond. Whether it's bulk materials or sensitive equipment, we deliver safely and on time—nationwide.</p>
+        
+        <div class="mb-4">
+          <p class=" font-semibold">📞 Call Us:</p>
+          <p class="text-lg text-green-800">+234 8163225789</p>
+          <p class="text-lg text-green-800">+234 8089316691</p>
+        </div>
+
+        <a href="#contact" class="inline-block bg-yellow-400 hover:bg-yellow-300  font-semibold py-3 px-6 rounded-full shadow">
+          Get a Quote
+        </a>
+      </div>
+
+      <!-- Image -->
+      <div class="w-full">
+        <img src="/worksite2.jpg" alt="Haulage in action" class="rounded-2xl shadow-lg w-full h-auto object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Offer -->
+  <section class="max-w-6xl mx-auto py-16 px-6 md:px-20 bg-white">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold  mb-4">Our Haulage Services</h2>
+      <p class="text-gray-600">We tailor our logistics to meet your project size, schedule, and budget. Here’s what we can handle:</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-green-100 p-6 shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold  mb-2">Construction Haulage</h3>
+        <p class="text-gray-700">Moving sand, gravel, cement, iron rods, and other building materials across sites with efficiency and speed.</p>
+      </div>
+      <div class="bg-green-100 p-6 shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold  mb-2">Bulk & Industrial Freight</h3>
+        <p class="text-gray-700">We transport heavy machinery, containers, and industrial loads using high-capacity trucks.</p>
+      </div>
+      <div class="bg-green-100 p-6 shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold  mb-2">Custom Logistics Routes</h3>
+        <p class="text-gray-700">We provide scheduled pickups, smart routing, and GPS-tracked deliveries tailored to your supply chain.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Our Haulage is Special -->
+<section class="py-16 px-6 md:px-20 bg-white">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold  mb-4">Why Our Haulage Stands Out</h2>
+    </div>
+  
+    <div class="max-w-4xl mx-auto space-y-6  text-lg">
+      <div class="flex items-start gap-4">
+        <i data-lucide="map-pin" class="w-6 h-6 text-green-700 mt-1"></i>
+        <p><strong>Nationwide Coverage:</strong> No town is too far, no road too remote—we reach every location in Nigeria.</p>
+      </div>
+  
+      <div class="flex items-start gap-4">
+        <i data-lucide="truck" class="w-6 h-6 text-green-700 mt-1"></i>
+        <p><strong>Modern Trucks:</strong> Our fleet includes tippers, low beds, flatbeds, and articulated vehicles built for Nigerian terrain.</p>
+      </div>
+  
+      <div class="flex items-start gap-4">
+        <i data-lucide="badge-check" class="w-6 h-6 text-green-700 mt-1"></i>
+        <p><strong>Driver Integrity:</strong> Our professional drivers are trained, vetted, and safety-certified.</p>
+      </div>
+  
+      <div class="flex items-start gap-4">
+        <i data-lucide="radar" class="w-6 h-6 text-green-700 mt-1"></i>
+        <p><strong>Real-Time Tracking:</strong> You’ll know where your goods are at all times via GPS tracking.</p>
+      </div>
+  
+      <div class="flex items-start gap-4">
+        <i data-lucide="wallet" class="w-6 h-6 text-green-700 mt-1"></i>
+        <p><strong>Affordable Pricing:</strong> We offer flexible pricing for one-off contracts and long-term partnerships.</p>
+      </div>
+  
+      <div class="flex items-start gap-4">
+        <i data-lucide="headset" class="w-6 h-6 text-green-700 mt-1"></i>
+        <p><strong>24/7 Support:</strong> Our logistics desk is always on standby to assist you during transit.</p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-green-900 text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Need Your Goods Moved Safely?</h2>
+    <p class="mb-6">Partner with Rebtor today and enjoy peace of mind, knowing your cargo is in capable hands.</p>
+    <a href="form.html" class="bg-yellow-400 hover:bg-yellow-300  font-semibold py-3 px-6 rounded-full shadow">
+      Book a Haulage Now
+    </a>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-green-900 text-white py-10 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <h3 class="font-bold text-lg mb-2">Rebtor Fleet Circle™</h3>
+        <p class="text-sm">Moving the earth so our partners grow wealth. Logistics, trucking, partnerships made easy.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Quick Links</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#services" class="hover:text-green-300">Services</a></li>
+          <li><a href="#model" class="hover:text-green-300">How It Works</a></li>
+          <li><a href="#contact" class="hover:text-green-300">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Get In Touch</h4>
+        <p class="text-sm">📍 Lagos, Nigeria</p>
+        <p class="text-sm">📞 +234-8163225789</p>
+        <p class="text-sm">✉️ contact@rebtor.com</p>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-sm text-green-300">© 2025 Rebtor. All rights reserved.</div>
+  </footer>
+  
+  
+  <!-- Add this script at the end of your HTML (before </body>) -->
+<script>
+  const toggleBtn = document.getElementById("servicesToggle");
+  const menu = document.getElementById("servicesMenu");
+  const arrow = document.getElementById("dropdownArrow");
+
+  toggleBtn.addEventListener("click", (e) => {
+    e.stopPropagation(); // Prevent click from closing immediately
+    menu.classList.toggle("hidden");
+    arrow.classList.toggle("rotate-180");
+  });
+
+  // Close dropdown if clicking outside
+  document.addEventListener("click", (e) => {
+    if (!toggleBtn.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.add("hidden");
+      arrow.classList.remove("rotate-180");
+    }
+  });
+</script>  
+  
+</body>
+</html>

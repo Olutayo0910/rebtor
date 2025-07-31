@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <!-- Title -->
+    <title>Truck Procurement Services in Nigeria | Rebtor Logistics</title>
+  
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Rebtor simplifies truck procurement in Nigeria — from trusted sellers and inspection to insurance and licensing. We help you secure quality trucks at the right price.">
+    <meta name="keywords" content="truck procurement Nigeria, buy truck Nigeria, truck dealers, truck purchase service, truck inspection, truck licensing, truck insurance, truck investment Nigeria">
+    <meta name="author" content="Rebtor Limited">
+  
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Truck Procurement Services in Nigeria | Rebtor Logistics">
+    <meta property="og:description" content="Get the right truck at the right price with Rebtor's professional procurement services. Inspection, licensing, and insurance assistance included.">
+    <meta property="og:image" content="https://www.rebtor.com/rebtor_logo.png">
+    <meta property="og:url" content="https://www.rebtor.com/procurement.html">
+    <meta property="og:type" content="website">
+  
+    <!-- Favicon -->
+    <link rel="icon" href="rebtor_logo.png" type="image/png">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => lucide.createIcons());
+    </script>
+  
+    <!-- Alpine.js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  
+    <!-- Font Styling -->
+    <style>
+      body {
+        font-family: 'Merriweather', serif;
+      }
+      h1, h2, h3, nav, button {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+  
+    <!-- Optional Decorative Shape -->
+    <style>
+      .clip-diagonal {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+      }
+    </style>
+  </head>
+  
+      
+<body class="font-sans text-black">
+
+  <nav class="bg-green-900 text-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="index.html">
+            <img class="h-12" src="reb4-logo.png" alt="Rebtor Logo">
+          </a>
+        </div>
+  
+        <!-- Center Contact Info (Hidden on small screens) -->
+        <div class="hidden md:flex flex-col text-center text-sm">
+          <span>📧 info@rebtor.com</span>
+          <span>📞 08163225789</span>
+        </div>
+  
+        <!-- Navigation Links -->
+        <div class="hidden md:flex gap-6 font-semibold items-center">
+          <a href="about.html" class="hover:text-green-300">About</a>
+  
+          <!-- Dropdown -->
+          <div class="relative group">
+            <button id="servicesToggle" class="flex items-center gap-1 hover:text-green-300">
+              Services
+              <svg id="dropdownArrow" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.084l3.71-3.854a.75.75 0 111.08 1.04l-4.24 4.4a.75.75 0 01-1.08 0l-4.24-4.4a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div id="servicesMenu" class="absolute left-0 mt-2 w-56 bg-white text-green-900 rounded shadow-lg py-2 hidden group-hover:block z-50">
+              <a href="haulage.html" class="block px-4 py-2 hover:bg-green-100">Haulage Services</a>
+              <a href="management.html" class="block px-4 py-2 hover:bg-green-100">Truck Management</a>
+              <a href="fleet-circle.html" class="block px-4 py-2 hover:bg-green-100">Rebtor Fleet Circle™</a>
+              <a href="procurement.html" class="block px-4 py-2 hover:bg-green-100">Procurement</a>
+              <a href="index.html#consultancy" class="block px-4 py-2 hover:bg-green-100">Consultancy</a>
+            </div>
+          </div>
+  
+          <a href="index.html#model" class="hover:text-green-300">How It Works</a>
+          <a href="index.html#contact" class="hover:text-green-300">Contact</a>
+        </div>
+  
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobileMenuButton" class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+      <div class="text-sm text-center mb-4">
+        <p>📧 info@rebtor.com</p>
+        <p>📞 08163225789</p>
+      </div>
+      <a href="about.html" class="block py-2 hover:text-green-300">About</a>
+      <a href="haulage.html" class="block py-2 hover:text-green-300">Haulage Services</a>
+      <a href="management.html" class="block py-2 hover:text-green-300">Truck Management</a>
+      <a href="fleet-circle.html" class="block py-2 hover:text-green-300">Rebtor Fleet Circle™</a>
+      <a href="procurement.html" class="block py-2 hover:text-green-300">Procurement</a>
+      <a href="index.html#consultancy" class="block py-2 hover:text-green-300">Consultancy</a>
+      <a href="index.html#model" class="block py-2 hover:text-green-300">How It Works</a>
+      <a href="index.html#contact" class="block py-2 hover:text-green-300">Contact</a>
+    </div>
+  
+    <script>
+      // Toggle mobile menu
+      document.getElementById('mobileMenuButton').addEventListener('click', () => {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </nav>  
+
+
+  <section id="procurement" class="py-16 px-6 md:px-20 bg-white text-gray-800">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-green-900 mb-6">🔧 Truck Procurement Made Simple</h2>
+      
+      <div class="bg-green-50 rounded-2xl p-8 shadow-lg border-l-4 border-green-700">
+        <p class="mb-4 text-lg">
+          At <strong>Rebtor</strong>, we understand how complex and risky truck procurement can be. That’s why we’ve built a trusted end-to-end service designed to help our clients—whether first-time buyers or fleet investors—purchase trucks confidently and cost-effectively.
+        </p>
+  
+        <p class="mb-4 text-lg">
+          We partner with reputable companies that deal in various types of trucks and parts, giving our clients access to <strong>affordable prices</strong> without compromising quality. Whether you’re buying a brand-new vehicle or a reliable foreign-used truck, we help you secure the right asset for your needs.
+        </p>
+  
+        <p class="mb-4 text-lg">
+          Our work doesn’t stop at sourcing. We have experienced mechanics on our team who assist in <strong>inspecting, assessing, and verifying trucks</strong> before any payments are made—so you’re never left in the dark or defrauded.
+        </p>
+  
+        <p class="mb-4 text-lg">
+          We also partner with trusted <strong>insurance companies</strong> to ensure your newly acquired truck is protected from day one, and we handle all <strong>documentation, licensing, and registration</strong> processes on your behalf.
+        </p>
+  
+        <p class="mb-6 text-lg">
+          From finding the truck, to inspecting it, to securing the plate number—we take care of it all. With Rebtor, truck procurement is not just easy, it’s worry-free.
+        </p>
+  
+        <div class="text-center">
+          <a href="https://wa.me/2348163225789" target="_blank" class="bg-green-700 text-white px-8 py-3 rounded-full hover:bg-green-800 transition font-semibold shadow-md">
+            Purchase a truck
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Our procurement process -->
+  <section class="py-16 px-6 md:px-20 bg-yellow-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-green-900 mb-12 text-center">🔍 How Our Truck Procurement Works</h2>
+  
+      <div class="space-y-8 text-green-900">
+        <!-- Step 1 -->
+        <div class="flex flex-col md:flex-row items-start bg-white p-6 rounded-xl shadow-lg border-l-4 border-green-700">
+          <div class="text-4xl mr-6 mb-4 md:mb-0">📋</div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Step 1: Tell Us What You Need</h3>
+            <p>Let us know your truck specifications—tipper, flatbed, low bed, or more. We’ll guide you through the best options based on your budget and purpose.</p>
+          </div>
+        </div>
+  
+        <!-- Step 2 -->
+        <div class="flex flex-col md:flex-row items-start bg-white p-6 rounded-xl shadow-lg border-l-4 border-green-700">
+          <div class="text-4xl mr-6 mb-4 md:mb-0">🔧</div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Step 2: Expert Inspection</h3>
+            <p>Our experienced mechanics and procurement team inspect trucks from our trusted partners to ensure quality, durability, and value before you make payment.</p>
+          </div>
+        </div>
+  
+        <!-- Step 3 -->
+        <div class="flex flex-col md:flex-row items-start bg-white p-6 rounded-xl shadow-lg border-l-4 border-green-700">
+          <div class="text-4xl mr-6 mb-4 md:mb-0">📑</div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Step 3: Seamless Documentation</h3>
+            <p>We handle all paperwork—licensing, registration, insurance, and ownership documentation. You get a road-ready truck, fully compliant with Nigerian laws.</p>
+          </div>
+        </div>
+  
+        <!-- Step 4 -->
+        <div class="flex flex-col md:flex-row items-start bg-white p-6 rounded-xl shadow-lg border-l-4 border-green-700">
+          <div class="text-4xl mr-6 mb-4 md:mb-0">🤝</div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Step 4: Handover & Delivery</h3>
+            <p>Once everything is in place, we finalize your ownership and deliver the truck. You receive a detailed performance brief and post-delivery guidance.</p>
+          </div>
+        </div>
+  
+        <!-- Step 5 -->
+        <div class="flex flex-col md:flex-row items-start bg-white p-6 rounded-xl shadow-lg border-l-4 border-green-700">
+          <div class="text-4xl mr-6 mb-4 md:mb-0">🚛</div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Step 5: Optional Management</h3>
+            <p>If you wish, we can also place your truck under our trusted Rebtor management—handling jobs, drivers, fueling, and daily earnings tracking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+ <!-- Partners Section -->
+<section id="partners" class="bg-white py-16 px-6 md:px-24">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-green-900 mb-4">Our Trusted Partners</h2>
+      <p class="text-green-800 text-lg max-w-2xl mx-auto">
+        We work with leading companies in truck sales, spare parts, insurance, and documentation services. These partnerships allow us to serve our clients with the best quality, pricing, and support.
+      </p>
+    </div>
+  
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center justify-items-center">
+      <img src="/tabs_logo1.png" alt="Partner 1" class="h-16 object-contain">
+      <img src="/howo_logo.png" alt="Partner 2" class="h-16 object-contain">
+      <img src="/shacman_logo.png" alt="Partner 3" class="h-16 object-contain">
+      <img src="/Weichai_Logo1.png" alt="Partner 4" class="h-16 object-contain">
+      <img src="/faw_logo.png" alt="Partner 5" class="h-16 object-contain">
+      <img src="/sany_logo.png" alt="Partner 6" class="h-16 object-contain">
+      <img src="/tyreexpress_logo1.png" alt="Partner 7" class="h-16 object-contain">
+      <img src="/man_logo.png" alt="Partner 8" class="h-16 object-contain">
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+<footer class="bg-green-900 text-white py-10 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <h3 class="font-bold text-lg mb-2">Rebtor Fleet Circle™</h3>
+        <p class="text-sm">Moving the earth so our partners grow wealth. Logistics, trucking, partnerships made easy.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Quick Links</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#services" class="hover:text-green-300">Services</a></li>
+          <li><a href="#model" class="hover:text-green-300">How It Works</a></li>
+          <li><a href="#contact" class="hover:text-green-300">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Get In Touch</h4>
+        <p class="text-sm">📍 Lagos, Nigeria</p>
+        <p class="text-sm">📞 +234-8163225789</p>
+        <p class="text-sm">✉️ contact@rebtor.com</p>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-sm text-green-300">© 2025 Rebtor. All rights reserved.</div>
+  </footer>
+  
+  
+  <!-- Add this script at the end of your HTML (before </body>) -->
+<script>
+    const toggleBtn = document.getElementById("servicesToggle");
+    const menu = document.getElementById("servicesMenu");
+    const arrow = document.getElementById("dropdownArrow");
+  
+    toggleBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      arrow.classList.toggle("rotate-180");
+    });
+  
+    // Optional: Close dropdown when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!toggleBtn.contains(e.target) && !menu.contains(e.target)) {
+        menu.classList.add("hidden");
+        arrow.classList.remove("rotate-180");
+      }
+    });
+  </script>
+  
+</body>
+</html>

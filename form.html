@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+        <!-- Page Title -->
+        <title>Rebtor Fleet Circle™ | Request a Service</title>
+      
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Submit a request for Rebtor Fleet Circle™ haulage services, truck management, procurement, or fleet investment.">
+        <meta name="keywords" content="Rebtor, haulage request form, truck management form, fleet circle, logistics Nigeria, transport services">
+        <meta name="author" content="Rebtor Limited">
+      
+        <!-- Open Graph (Social Sharing) -->
+        <meta property="og:title" content="Rebtor Fleet Circle™ Service Request Form">
+        <meta property="og:description" content="Request haulage services, truck management, procurement, or fleet investment with Rebtor Fleet Circle™.">
+        <meta property="og:image" content="https://www.rebtor.com/rebtor_logo.png">
+        <meta property="og:url" content="https://www.rebtor.com/form.html">
+        <meta property="og:type" content="website">
+      
+        <!-- Favicon -->
+        <link rel="icon" href="rebtor_logo.png" type="image/png">
+      
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+      
+        <!-- Tailwind CSS & Icons -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script>
+          window.addEventListener("DOMContentLoaded", () => lucide.createIcons());
+        </script>
+      
+        <!-- Font Styling -->
+        <style>
+          body {
+            font-family: 'Merriweather', serif;
+          }
+          h1, h2, h3, nav, button {
+            font-family: 'Poppins', sans-serif;
+          }
+          .clip-diagonal {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+          }
+        </style>
+      </head>
+      
+  <body class="font-[Inter] bg-gray-100 text-black">
+    <nav class="bg-green-900 text-white shadow sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+              <a href="index.html">
+                <img class="h-12" src="reb4-logo.png" alt="Rebtor Logo">
+              </a>
+            </div>
+      
+            <!-- Center Contact Info (Hidden on small screens) -->
+            <div class="hidden md:flex flex-col text-center text-sm">
+              <span>📧 info@rebtor.com</span>
+              <span>📞 08163225789</span>
+            </div>
+      
+            <!-- Navigation Links -->
+            <div class="hidden md:flex gap-6 font-semibold items-center">
+              <a href="about.html" class="hover:text-green-300">About</a>
+      
+              <!-- Dropdown -->
+              <div class="relative group">
+                <button id="servicesToggle" class="flex items-center gap-1 hover:text-green-300">
+                  Services
+                  <svg id="dropdownArrow" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.084l3.71-3.854a.75.75 0 111.08 1.04l-4.24 4.4a.75.75 0 01-1.08 0l-4.24-4.4a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+                <div id="servicesMenu" class="absolute left-0 mt-2 w-56 bg-white text-green-900 rounded shadow-lg py-2 hidden group-hover:block z-50">
+                  <a href="haulage.html" class="block px-4 py-2 hover:bg-green-100">Haulage Services</a>
+                  <a href="management.html" class="block px-4 py-2 hover:bg-green-100">Truck Management</a>
+                  <a href="fleet-circle.html" class="block px-4 py-2 hover:bg-green-100">Rebtor Fleet Circle™</a>
+                  <a href="procurement.html" class="block px-4 py-2 hover:bg-green-100">Procurement</a>
+                  <a href="index.html#consultancy" class="block px-4 py-2 hover:bg-green-100">Consultancy</a>
+                </div>
+              </div>
+      
+              <a href="index.html#model" class="hover:text-green-300">How It Works</a>
+              <a href="index.html#contact" class="hover:text-green-300">Contact</a>
+            </div>
+      
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+              <button id="mobileMenuButton" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+          <div class="text-sm text-center mb-4">
+            <p>📧 info@rebtor.com</p>
+            <p>📞 08163225789</p>
+          </div>
+          <a href="about.html" class="block py-2 hover:text-green-300">About</a>
+          <a href="haulage.html" class="block py-2 hover:text-green-300">Haulage Services</a>
+          <a href="management.html" class="block py-2 hover:text-green-300">Truck Management</a>
+          <a href="fleet-circle.html" class="block py-2 hover:text-green-300">Rebtor Fleet Circle™</a>
+          <a href="procurement.html" class="block py-2 hover:text-green-300">Procurement</a>
+          <a href="index.html#consultancy" class="block py-2 hover:text-green-300">Consultancy</a>
+          <a href="index.html#model" class="block py-2 hover:text-green-300">How It Works</a>
+          <a href="index.html#contact" class="block py-2 hover:text-green-300">Contact</a>
+        </div>
+      
+        <script>
+          // Toggle mobile menu
+          document.getElementById('mobileMenuButton').addEventListener('click', () => {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+          });
+        </script>
+      </nav>  
+    
+    
+    <section id="contact-form" class="bg-white py-12 px-6 md:px-20">
+        <div class="max-w-3xl mx-auto bg-gray-100 rounded-xl shadow-md p-8">
+          <h2 class="text-2xl font-bold mb-6 text-green-800">📋 Get in Touch with Rebtor</h2>
+          <form action="https://formspree.io/f/mnnzzqzw" method="POST" class="space-y-6">
+            <input type="hidden" name="_redirect" value="thank-you.html" />
+            <input type="text" name="_gotcha" style="display:none" />
+            <!-- Service Selector -->
+            <div>
+              <label class="block font-medium text-gray-700">What service are you interested in?</label>
+              <select id="serviceType" name="serviceType" class="mt-1 w-full border rounded px-4 py-2" required>
+                <option value="">-- Select One --</option>
+                <option value="fleet">Rebtor Fleet Circle™</option>
+                <option value="management">Truck Management</option>
+                <option value="haulage">Haulage Services</option>
+                <option value="procurement">Truck Procurement</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+      
+            <!-- Fleet Circle -->
+            <div id="fleetFields" class="hidden space-y-4">
+              <input type="text" name="fleet_investor_type" placeholder="Are you an investor or co-owner?" class="w-full border rounded px-4 py-2" />
+              <input type="number" name="fleet_trucks" placeholder="How many trucks?" class="w-full border rounded px-4 py-2" />
+              <input type="text" name="fleet_location" placeholder="Preferred location?" class="w-full border rounded px-4 py-2" />
+            </div>
+      
+            <!-- Truck Management -->
+            <div id="managementFields" class="hidden space-y-4">
+              <input type="number" name="management_trucks" placeholder="Number of trucks" class="w-full border rounded px-4 py-2" />
+              <input type="text" name="truck_type" placeholder="Truck type(s)" class="w-full border rounded px-4 py-2" />
+              <input type="text" name="truck_location" placeholder="Location of truck(s)" class="w-full border rounded px-4 py-2" />
+              <input type="text" name="truck_status" placeholder="Truck status (active, new, etc.)" class="w-full border rounded px-4 py-2" />
+            </div>
+      
+            <!-- Haulage Services -->
+            <div id="haulageFields" class="hidden space-y-4">
+              <input type="text" name="goods_type" placeholder="Type of goods" class="w-full border rounded px-4 py-2" />
+              <input type="text" name="pickup" placeholder="Pickup location" class="w-full border rounded px-4 py-2" />
+              <input type="text" name="dropoff" placeholder="Drop-off location" class="w-full border rounded px-4 py-2" />
+              <input type="text" name="weight" placeholder="Weight estimate (if known)" class="w-full border rounded px-4 py-2" />
+            </div>
+      
+            <!-- Procurement -->
+            <div id="procurementFields" class="hidden space-y-4">
+              <input type="text" name="truck_part_type" placeholder="Truck or part needed" class="w-full border rounded px-4 py-2" />
+              <input type="text" name="budget" placeholder="Budget range" class="w-full border rounded px-4 py-2" />
+              <select name="inspection" class="w-full border rounded px-4 py-2">
+                <option value="">Need help with inspection?</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+              <select name="insurance" class="w-full border rounded px-4 py-2">
+                <option value="">Insurance needed?</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+      
+            <!-- Other -->
+            <div id="otherFields" class="hidden">
+              <input type="text" name="other_info" placeholder="Please specify your request" class="w-full border rounded px-4 py-2" />
+            </div>
+      
+            <!-- Common Fields -->
+            <div class="space-y-4">
+              <input type="text" name="fullName" placeholder="Your Full Name" required class="w-full border rounded px-4 py-2" />
+              <input type="tel" name="phone" placeholder="Phone Number (WhatsApp)" required class="w-full border rounded px-4 py-2" />
+              <input type="email" name="email" placeholder="Email (optional)" class="w-full border rounded px-4 py-2" />
+              <textarea name="message" rows="3" placeholder="Additional message..." class="w-full border rounded px-4 py-2"></textarea>
+            </div>
+      
+            <!-- Submit -->
+            <button type="submit" class="w-full bg-green-700 text-white py-2 px-6 rounded hover:bg-green-800 transition">
+              🚛 Submit Request
+            </button>
+          </form>
+        </div>
+      </section>
+      
+      <script>
+        const serviceType = document.getElementById('serviceType');
+        const fieldGroups = {
+          fleet: 'fleetFields',
+          management: 'managementFields',
+          haulage: 'haulageFields',
+          procurement: 'procurementFields',
+          other: 'otherFields',
+        };
+      
+        serviceType.addEventListener('change', () => {
+          Object.values(fieldGroups).forEach(id => document.getElementById(id).classList.add('hidden'));
+          const selected = fieldGroups[serviceType.value];
+          if (selected) document.getElementById(selected).classList.remove('hidden');
+        });
+      </script>
+      
+
+<!-- Add this script at the end of your HTML (before </body>) -->
+<script>
+    const toggleBtn = document.getElementById("servicesToggle");
+    const menu = document.getElementById("servicesMenu");
+    const arrow = document.getElementById("dropdownArrow");
+  
+    toggleBtn.addEventListener("click", (e) => {
+      e.stopPropagation(); // Prevent click from closing immediately
+      menu.classList.toggle("hidden");
+      arrow.classList.toggle("rotate-180");
+    });
+  
+    // Close dropdown if clicking outside
+    document.addEventListener("click", (e) => {
+      if (!toggleBtn.contains(e.target) && !menu.contains(e.target)) {
+        menu.classList.add("hidden");
+        arrow.classList.remove("rotate-180");
+      }
+    });
+  </script>  
+
+
+  </body>
+</html>
