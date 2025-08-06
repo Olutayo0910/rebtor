@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+      <!-- Page Title & Description -->
+  <title>Blog & News | Rebtor Fleet Circle™</title>
+  <meta name="description" content="Read the latest news, updates, and industry insights from Rebtor Fleet Circle™ — Nigeria’s trusted haulage, truck management, and fleet investment company.">
+  <meta name="keywords" content="Rebtor blog, trucking news Nigeria, haulage industry updates, fleet investment tips, truck management advice">
+  <meta name="author" content="Rebtor Logistics">
+  <meta http-equiv="Content-Language" content="en">
+
+  <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+  <meta property="og:title" content="Rebtor Blog & News">
+  <meta property="og:description" content="Stay updated on haulage industry news, trucking insights, and Rebtor Fleet Circle™ updates.">
+  <meta property="og:image" content="https://www.rebtor.com/reb4-logo.png">
+  <meta property="og:url" content="https://www.rebtor.com/blog-news.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rebtor Blog & News">
+  <meta name="twitter:description" content="Your go-to source for trucking news, haulage tips, and Rebtor updates.">
+  <meta name="twitter:image" content="https://www.rebtor.com/reb4-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="rebtor_logo.png" type="image/png">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Rebtor Blog & News",
+    "url": "https://www.rebtor.com/blog-news.html",
+    "description": "Trucking news, haulage industry updates, fleet investment tips, and Rebtor company announcements.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Rebtor Fleet Circle",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.rebtor.com/reb4-logo.png"
+      }
+    }
+  }
+  </script>
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+  
+  <body class="font-[Inter] bg-gray-100 text-black">
+    <nav class="bg-green-900 text-white shadow sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="index.html">
+              <img class="h-12" src="reb4-logo.png" alt="Rebtor Logo">
+            </a>
+          </div>
+    
+          <!-- Center Contact Info (Hidden on small screens) -->
+          <div class="hidden md:flex flex-col text-center text-sm">
+            <span>📧 info@rebtor.com</span>
+            <span>📞 08163225789</span>
+          </div>
+    
+          <!-- Navigation Links -->
+          <div class="hidden md:flex gap-6 font-semibold items-center">
+            <a href="about.html" class="hover:text-green-300">About</a>
+    
+            <!-- Dropdown -->
+            <div class="relative group">
+              <button id="servicesToggle" class="flex items-center gap-1 hover:text-green-300">
+                Services
+                <svg id="dropdownArrow" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.084l3.71-3.854a.75.75 0 111.08 1.04l-4.24 4.4a.75.75 0 01-1.08 0l-4.24-4.4a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+              <div id="servicesMenu" class="absolute left-0 mt-2 w-56 bg-white text-green-900 rounded shadow-lg py-2 hidden group-hover:block z-50">
+                <a href="haulage.html" class="block px-4 py-2 hover:bg-green-100">Haulage Services</a>
+                <a href="management.html" class="block px-4 py-2 hover:bg-green-100">Truck Management</a>
+                <a href="fleet-circle.html" class="block px-4 py-2 hover:bg-green-100">Rebtor Fleet Circle™</a>
+                <a href="procurement.html" class="block px-4 py-2 hover:bg-green-100">Procurement</a>
+                <a href="index.html#consultancy" class="block px-4 py-2 hover:bg-green-100">Consultancy</a>
+              </div>
+            </div>
+    
+            <a href="blog-news.html" class="hover:text-green-300">Blog & News</a>
+            <a href="index.html#model" class="hover:text-green-300">How It Works</a>
+            <a href="index.html#contact" class="hover:text-green-300">Contact</a>
+          </div>
+    
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden flex items-center">
+            <button id="mobileMenuButton" class="text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+        <div class="text-sm text-center mb-4">
+          <p>📧 info@rebtor.com</p>
+          <p>📞 08163225789</p>
+        </div>
+        <a href="about.html" class="block py-2 hover:text-green-300">About</a>
+        <a href="haulage.html" class="block py-2 hover:text-green-300">Haulage Services</a>
+        <a href="management.html" class="block py-2 hover:text-green-300">Truck Management</a>
+        <a href="fleet-circle.html" class="block py-2 hover:text-green-300">Rebtor Fleet Circle™</a>
+        <a href="procurement.html" class="block py-2 hover:text-green-300">Procurement</a>
+        <a href="index.html#consultancy" class="block py-2 hover:text-green-300">Consultancy</a>
+        <a href="blog-news.html" class="block py-2 hover:text-green-300">Blog & News</a>
+        <a href="index.html#model" class="block py-2 hover:text-green-300">How It Works</a>
+        <a href="index.html#contact" class="block py-2 hover:text-green-300">Contact</a>
+      </div>
+    
+      <script>
+        // Toggle mobile menu
+        document.getElementById('mobileMenuButton').addEventListener('click', () => {
+          const menu = document.getElementById('mobileMenu');
+          menu.classList.toggle('hidden');
+        });
+      </script>
+    </nav>    
+    <!-- Page Header -->
+  <section class="bg-green-800 text-white py-16 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-4xl font-bold mb-4">Blog & News</h1>
+      <p class="text-lg text-green-200">Insights, updates, and stories from Nigeria’s haulage and logistics industry.</p>
+    </div>
+  </section>
+
+  <!-- Blog Posts Grid -->
+  <!-- Blog Posts Grid -->
+<section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-8">
+
+    <!-- Profitable Truck Management -->
+    <a href="profitable-truck-management-2025.html" class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+      <img src="/assets/worksite.jpg" alt="Truck on highway" class="rounded-lg mb-4">
+      <h2 class="text-xl font-semibold text-green-800 mb-2">Profitable Truck Management in Nigeria 2025</h2>
+      <p class="text-sm text-gray-600 mb-4">Proven strategies to boost fleet performance, cut costs, and grow profits in Nigeria’s haulage sector.</p>
+      <span class="text-green-700 font-medium">Read More →</span>
+    </a>
+  
+    <!-- Truck Procurement -->
+    <a href="truck-procurement-nigeria-2025.html" class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+      <img src="images/truck-procurement.jpg" alt="Truck procurement process" class="rounded-lg mb-4">
+      <h2 class="text-xl font-semibold text-green-800 mb-2">Truck Procurement Strategies in Nigeria 2025</h2>
+      <p class="text-sm text-gray-600 mb-4">Smart ways to source, finance, and acquire trucks profitably for long-term business growth.</p>
+      <span class="text-green-700 font-medium">Read More →</span>
+    </a>
+  
+    <!-- Sand & Granite Costs -->
+    <a href="sand-granite-haulage-costs-nigeria-2025.html" class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+      <img src="images/sand-granite.jpg" alt="Sand and granite delivery truck" class="rounded-lg mb-4">
+      <h2 class="text-xl font-semibold text-green-800 mb-2">Sand & Granite Haulage Costs in Nigeria 2025</h2>
+      <p class="text-sm text-gray-600 mb-4">Latest pricing trends and tips to save on bulk material transport for construction projects.</p>
+      <span class="text-green-700 font-medium">Read More →</span>
+    </a>
+  
+    <!-- Fleet Investment -->
+    <a href="fleet-investment-nigeria-2025.html" class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+      <img src="images/fleet-investment.jpg" alt="Fleet investment trucks" class="rounded-lg mb-4">
+      <h2 class="text-xl font-semibold text-green-800 mb-2">Fleet Investment Opportunities in Nigeria 2025</h2>
+      <p class="text-sm text-gray-600 mb-4">Where to invest in the Nigerian logistics sector for maximum returns and steady growth.</p>
+      <span class="text-green-700 font-medium">Read More →</span>
+    </a>
+  
+    <!-- Green Logistics -->
+    <a href="green-logistics-nigeria-2025.html" class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+      <img src="images/green-logistics.jpg" alt="Eco-friendly trucks" class="rounded-lg mb-4">
+      <h2 class="text-xl font-semibold text-green-800 mb-2">Green Logistics Trends in Nigeria 2025</h2>
+      <p class="text-sm text-gray-600 mb-4">How sustainability is reshaping haulage, cutting emissions, and boosting efficiency.</p>
+      <span class="text-green-700 font-medium">Read More →</span>
+    </a>
+  
+    <!-- Benefits of Fleet Partnerships -->
+    <a href="benefits-fleet-partnerships-nigeria-2025.html" class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+      <img src="images/fleet-partnership.jpg" alt="Fleet partnerships handshake" class="rounded-lg mb-4">
+      <h2 class="text-xl font-semibold text-green-800 mb-2">Benefits of Fleet Partnerships in Nigeria 2025</h2>
+      <p class="text-sm text-gray-600 mb-4">Why teaming up in logistics operations can boost profits and operational stability.</p>
+      <span class="text-green-700 font-medium">Read More →</span>
+    </a>
+  
+    <!-- How to Build Haulage Partnerships -->
+    <a href="how-to-haulage-partnerships-nigeria-2025.html" class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+      <img src="images/haulage-partnership.jpg" alt="Two logistics companies working together" class="rounded-lg mb-4">
+      <h2 class="text-xl font-semibold text-green-800 mb-2">How to Build Profitable Haulage Partnerships in Nigeria 2025</h2>
+      <p class="text-sm text-gray-600 mb-4">Steps to form long-term, win‑win alliances in the Nigerian trucking business.</p>
+      <span class="text-green-700 font-medium">Read More →</span>
+    </a>
+  
+    <!-- CNG & Electric Trucks -->
+    <a href="cng-electric-trucks-nigeria-2025.html" class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+      <img src="images/cng-electric-truck.jpg" alt="CNG and electric trucks" class="rounded-lg mb-4">
+      <h2 class="text-xl font-semibold text-green-800 mb-2">CNG & Electric Trucks in Nigeria 2025</h2>
+      <p class="text-sm text-gray-600 mb-4">The rise of cleaner, cheaper alternatives to diesel for Nigerian fleets.</p>
+      <span class="text-green-700 font-medium">Read More →</span>
+    </a>
+  
+    <!-- Reduce Truck Operating Costs -->
+    <a href="reduce-truck-operating-costs-nigeria-2025.html" class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+      <img src="images/reduce-costs.jpg" alt="Truck maintenance cost saving" class="rounded-lg mb-4">
+      <h2 class="text-xl font-semibold text-green-800 mb-2">How to Reduce Truck Operating Costs in Nigeria 2025</h2>
+      <p class="text-sm text-gray-600 mb-4">Proven strategies to cut expenses on fuel, repairs, and administration.</p>
+      <span class="text-green-700 font-medium">Read More →</span>
+    </a>
+  
+    <!-- Future of Haulage -->
+    <a href="future-of-haulage-nigeria-2025.html" class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+      <img src="images/future-haulage.jpg" alt="Future haulage trends" class="rounded-lg mb-4">
+      <h2 class="text-xl font-semibold text-green-800 mb-2">The Future of Haulage in Nigeria 2025</h2>
+      <p class="text-sm text-gray-600 mb-4">Key trends, technology, and market changes shaping the sector’s future.</p>
+      <span class="text-green-700 font-medium">Read More →</span>
+    </a>
+  
+    <!-- Truck Leasing -->
+    <a href="truck-leasing-nigeria-2025.html" class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+      <img src="images/truck-leasing.jpg" alt="Truck leasing process" class="rounded-lg mb-4">
+      <h2 class="text-xl font-semibold text-green-800 mb-2">Truck Leasing Options in Nigeria 2025</h2>
+      <p class="text-sm text-gray-600 mb-4">Flexible, cost‑saving alternatives to buying trucks outright.</p>
+      <span class="text-green-700 font-medium">Read More →</span>
+    </a>
+  
+    <!-- Truck Documents & Licences -->
+    <a href="truck-documents-licences-nigeria-2025.html" class="bg-white rounded-lg shadow hover:shadow-lg transition p-4">
+      <img src="images/truck-documents.jpg" alt="Truck documents and licences" class="rounded-lg mb-4">
+      <h2 class="text-xl font-semibold text-green-800 mb-2">Truck Documents & Licences in Nigeria 2025</h2>
+      <p class="text-sm text-gray-600 mb-4">Practical guide to permits, paperwork, and licence renewals for truckers.</p>
+      <span class="text-green-700 font-medium">Read More →</span>
+    </a>
+  
+  </section>
+  
+
+<!-- Footer -->
+<footer class="bg-green-900 text-white py-10 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+    <div>
+      <h3 class="font-bold text-lg mb-2">Rebtor Fleet Circle™</h3>
+      <p class="text-sm">Moving the earth so our partners grow wealth. Logistics, trucking, partnerships made easy.</p>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Quick Links</h4>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#services" class="hover:text-green-300">Services</a></li>
+        <li><a href="#model" class="hover:text-green-300">How It Works</a></li>
+        <li><a href="#contact" class="hover:text-green-300">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Get In Touch</h4>
+      <p class="text-sm">📍 Lagos, Nigeria</p>
+      <p class="text-sm">📞 +234-8163225789</p>
+      <p class="text-sm">✉️ info@rebtor.com</p>
+    </div>
+  </div>
+  <div class="text-center mt-8 text-sm text-green-300">© 2025 Rebtor. All rights reserved.</div>
+</footer>
+
+
+<!-- Add this script at the end of your HTML (before </body>) -->
+<script>
+  const toggleBtn = document.getElementById("servicesToggle");
+  const menu = document.getElementById("servicesMenu");
+  const arrow = document.getElementById("dropdownArrow");
+
+  toggleBtn.addEventListener("click", (e) => {
+    e.stopPropagation(); // Prevent click from closing immediately
+    menu.classList.toggle("hidden");
+    arrow.classList.toggle("rotate-180");
+  });
+
+  // Close dropdown if clicking outside
+  document.addEventListener("click", (e) => {
+    if (!toggleBtn.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.add("hidden");
+      arrow.classList.remove("rotate-180");
+    }
+  });
+</script>  
+
+
+  </body>
+</html>
