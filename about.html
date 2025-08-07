@@ -23,7 +23,7 @@
     <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
     <meta property="og:title" content="About Rebtor Fleet Circle™">
     <meta property="og:description" content="Discover the story, vision, and mission behind Nigeria’s most reliable haulage and truck management company.">
-    <meta property="og:image" content="https://www.rebtor.com/reb4-logo.png">
+    <meta property="og:image" content="https://www.rebtor.com/new_rebtor_logo2">
     <meta property="og:url" content="https://www.rebtor.com/about.html">
     <meta property="og:type" content="website">
   
@@ -31,10 +31,10 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About Rebtor Fleet Circle™">
     <meta name="twitter:description" content="Our mission is to provide exceptional haulage, truck management, and fleet investment opportunities.">
-    <meta name="twitter:image" content="https://www.rebtor.com/reb4-logo.png">
+    <meta name="twitter:image" content="https://www.rebtor.com/new_rebtor_logo2">
   
    <!-- Favicon -->
-   <link rel="icon" href="rebtor_logo.png" type="image/png">
+   <link rel="icon" href="logo_icon1.png" type="image/png">
   
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -43,7 +43,7 @@
       "@type": "Organization",
       "name": "Rebtor Fleet Circle",
       "url": "https://www.rebtor.com",
-      "logo": "https://www.rebtor.com/reb4-logo.png",
+      "logo": "https://www.rebtor.com/new_rebtor_logo2",
       "description": "Rebtor Fleet Circle™ is a Nigerian logistics and haulage company offering fleet investment, truck management, and procurement services.",
       "sameAs": [
         "https://www.facebook.com/YourPage",
@@ -80,27 +80,22 @@
   </head>
   
   <body class="font-[Inter] bg-gray-100 text-black">
-    <nav class="bg-green-900 text-white shadow sticky top-0 z-50">
+    <nav class="bg-white text-black shadow sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
-          <!-- Logo -->
           <div class="flex-shrink-0">
             <a href="index.html">
-              <img class="h-12" src="reb4-logo.png" alt="Rebtor Logo">
+              <img class="h-12" src="new_rebtor_logo2.png" alt="Rebtor Logo">
             </a>
           </div>
-    
-          <!-- Center Contact Info (Hidden on small screens) -->
+  
           <div class="hidden md:flex flex-col text-center text-sm">
             <span>📧 info@rebtor.com</span>
             <span>📞 08163225789</span>
           </div>
-    
-          <!-- Navigation Links -->
+  
           <div class="hidden md:flex gap-6 font-semibold items-center">
             <a href="about.html" class="hover:text-green-300">About</a>
-    
-            <!-- Dropdown -->
             <div class="relative group">
               <button id="servicesToggle" class="flex items-center gap-1 hover:text-green-300">
                 Services
@@ -116,15 +111,14 @@
                 <a href="index.html#consultancy" class="block px-4 py-2 hover:bg-green-100">Consultancy</a>
               </div>
             </div>
-    
             <a href="blog-news.html" class="hover:text-green-300">Blog & News</a>
+            <a href="careers.html" class="hover:text-green-300">Careers</a>
             <a href="index.html#model" class="hover:text-green-300">How It Works</a>
             <a href="index.html#contact" class="hover:text-green-300">Contact</a>
           </div>
-    
-          <!-- Mobile Menu Button -->
+  
           <div class="md:hidden flex items-center">
-            <button id="mobileMenuButton" class="text-white focus:outline-none">
+            <button id="mobileMenuButton" class="text-grey focus:outline-none">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
                 viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -134,8 +128,7 @@
           </div>
         </div>
       </div>
-    
-      <!-- Mobile Menu -->
+  
       <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
         <div class="text-sm text-center mb-4">
           <p>📧 info@rebtor.com</p>
@@ -148,18 +141,11 @@
         <a href="procurement.html" class="block py-2 hover:text-green-300">Procurement</a>
         <a href="index.html#consultancy" class="block py-2 hover:text-green-300">Consultancy</a>
         <a href="blog-news.html" class="block py-2 hover:text-green-300">Blog & News</a>
+        <a href="careers.html" class="block py-2 hover:text-green-300">Careers</a>
         <a href="index.html#model" class="block py-2 hover:text-green-300">How It Works</a>
         <a href="index.html#contact" class="block py-2 hover:text-green-300">Contact</a>
       </div>
-    
-      <script>
-        // Toggle mobile menu
-        document.getElementById('mobileMenuButton').addEventListener('click', () => {
-          const menu = document.getElementById('mobileMenu');
-          menu.classList.toggle('hidden');
-        });
-      </script>
-    </nav>    
+    </nav>
     
     <section class="bg-white py-16 px-6 text-gray-800">
       <div class="max-w-6xl mx-auto space-y-16">
@@ -267,26 +253,26 @@
 </footer>
 
 
-<!-- Add this script at the end of your HTML (before </body>) -->
+<!-- Dropdown JS -->
 <script>
+  document.getElementById('mobileMenuButton').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
   const toggleBtn = document.getElementById("servicesToggle");
   const menu = document.getElementById("servicesMenu");
   const arrow = document.getElementById("dropdownArrow");
-
   toggleBtn.addEventListener("click", (e) => {
-    e.stopPropagation(); // Prevent click from closing immediately
+    e.stopPropagation();
     menu.classList.toggle("hidden");
     arrow.classList.toggle("rotate-180");
   });
-
-  // Close dropdown if clicking outside
   document.addEventListener("click", (e) => {
     if (!toggleBtn.contains(e.target) && !menu.contains(e.target)) {
       menu.classList.add("hidden");
       arrow.classList.remove("rotate-180");
     }
   });
-</script>  
+</script> 
 
 
   </body>
